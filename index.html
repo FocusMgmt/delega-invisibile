@@ -76,6 +76,28 @@ footer .small{font-size:14px;opacity:.8;margin-top:10px}
   .logos img.bil{height:21px}
   .logos span{font-size:15px}
   }
+
+  .materiali{display:flex;flex-wrap:wrap;gap:22px;margin-top:34px;align-items:stretch}
+  .scheda{flex:1 1 260px;background:#fff;border-radius:18px;padding:26px 24px;display:flex;flex-direction:column;
+          box-shadow:0 2px 14px rgba(38,33,92,.07)}
+  .scheda h3{margin:0 0 8px;font-size:1.18rem;color:#26215C;font-weight:700}
+  .scheda p{margin:0 0 20px;font-size:.95rem;line-height:1.55;color:#4A3B2A}
+  .scheda .testo{flex:1 0 auto;min-height:78px}
+  .scheda .piede-scheda{margin-top:auto}
+  .scheda .num{font-family:Poppins,sans-serif;font-size:2.4rem;font-weight:700;color:#D12988;
+               line-height:1;margin:0 0 10px;letter-spacing:-.02em}
+  .scheda .num::after{content:'';display:block;width:34px;height:4px;background:#D12988;
+                      border-radius:3px;margin-top:12px}
+  .scheda .formato{margin:14px 0 0;font-size:.8rem;color:#8A7A66;letter-spacing:.02em}
+  .scheda a.scarica{display:inline-block;align-self:flex-start;background:#D12988;color:#fff;
+                    text-decoration:none;font-weight:700;font-size:.95rem;padding:11px 22px;border-radius:26px}
+  .scheda a.scarica:hover{background:#26215C}
+  .nota-email{margin-top:34px}
+  .contatto{display:flex;align-items:center;gap:20px;background:#26215C;color:#FDE4B9;
+            border-radius:18px;padding:24px 28px}
+  .contatto svg{flex:0 0 auto}
+  .contatto p{margin:0;font-size:1rem;line-height:1.5}
+  .contatto a{color:#fff;font-weight:700}
 </style>
 </head>
 <body>
@@ -93,7 +115,6 @@ footer .small{font-size:14px;opacity:.8;margin-top:10px}
       <strong>Mercoledì 28 ottobre 2026</strong>
       <span>Hard Rock Cafe · Via Dante 5, Milano</span>
     </p>
-    <p class="teaser">Materiali disponibili<br><b>dal 28 ottobre 2026 · ore 20.00</b></p>
   </div>
   <svg class="scene" viewBox="-12 -12 740 420" role="img" aria-label="Tre stelle che rappresentano l’AI spingono un carrello della spesa">
     <g fill="#D12988"><path d="M88.0,12.0 L106.7,81.3 L176.0,100.0 L106.7,118.7 L88.0,188.0 L69.3,118.7 L0.0,100.0 L69.3,81.3 Z"/><path d="M178.0,152.0 L190.7,199.3 L238.0,212.0 L190.7,224.7 L178.0,272.0 L165.3,224.7 L118.0,212.0 L165.3,199.3 Z"/><path d="M62.0,210.0 L72.2,247.8 L110.0,258.0 L72.2,268.2 L62.0,306.0 L51.8,268.2 L14.0,258.0 L51.8,247.8 Z"/></g><text x="88" y="100" fill="#fff" font-family="Poppins,sans-serif" font-weight="700" font-size="28" text-anchor="middle" dominant-baseline="central">AI</text><text x="178" y="212" fill="#fff" font-family="Poppins,sans-serif" font-weight="700" font-size="19" text-anchor="middle" dominant-baseline="central">AI</text><text x="62" y="258" fill="#fff" font-family="Poppins,sans-serif" font-weight="700" font-size="15" text-anchor="middle" dominant-baseline="central">AI</text>
@@ -104,13 +125,54 @@ footer .small{font-size:14px;opacity:.8;margin-top:10px}
 
 <section class="wrap">
   <h2>La ricerca</h2>
-  <p class="lead">Una survey condotta da Focus Management con Bilendi su 1.000 shopper italiani, dedicata al ruolo dell’intelligenza artificiale lungo il percorso d’acquisto: dove entra, quanto ci si fida, quali bias la accompagnano e quali equilibri sta cambiando fra marche, insegne e consumatori.</p>
-  <p class="lead">I risultati vengono presentati in anteprima la sera del 28 ottobre 2026 all’Hard Rock Cafe di Milano. Da quel momento questa pagina ospiterà i materiali completi.</p>
+  <p class="lead">Una survey condotta da Focus Management con Bilendi su 1.000 shopper italian3, dedicata al ruolo dell’intelligenza artificiale lungo il percorso d’acquisto: dove entra, quanto ci si fida, quali bias la accompagnano e quali equilibri sta cambiando fra marche, insegne e consumer.</p>
+  <p class="lead prima">I risultati vengono presentati in anteprima la sera del 28 ottobre 2026 all’Hard Rock Cafe di Milano. Da quel momento questa pagina ospiterà i materiali completi.</p>
+  <p class="lead dopo" hidden>I risultati sono stati presentati in anteprima la sera del 28 ottobre 2026 all’Hard Rock Cafe di Milano.</p>
 </section>
 
-<section class="wrap big-gap" id="materiali">
+<section class="wrap big-gap prima" id="materiali-prima">
   <h2>Consulta i materiali</h2>
-  <p class="lead">Slide e sintesi della ricerca saranno disponibili qui dalle ore 20.00 di mercoledì 28 ottobre 2026. <span class="evidenziato">Se preferisci riceverli per email scrivi a<br><a href="mailto:marianna.bartiromo@focusmgmt.it?subject=La%20delega%20invisibile%20-%20materiali">marianna.bartiromo@focusmgmt.it</a></span></p>
+  <p class="lead">Slide e sintesi della ricerca saranno disponibili qui in chiusura dell’evento di mercoledì 28 ottobre 2026. <span class="evidenziato">Se preferisci riceverli per email scrivi a<br><a href="mailto:marianna.bartiromo@focusmgmt.it?subject=La%20delega%20invisibile%20-%20materiali">marianna.bartiromo@focusmgmt.it</a></span></p>
+</section>
+
+<section class="wrap big-gap dopo" id="materiali" hidden>
+  <h2>Consulta i materiali</h2>
+  <p class="lead">Tutti i materiali della serata sono disponibili qui sotto, liberamente scaricabili.</p>
+
+  <div class="materiali">
+    <div class="scheda">
+      <p class="num">01</p>
+      <h3>Abstract</h3>
+      <p class="testo">La sintesi completa: disegno di ricerca, i cinque profili, l’esperimento sulle risposte inventate e le cinque implicazioni per brand e retailer.</p>
+      <div class="piede-scheda"><a class="scarica" href="ABSTRACT_-_La_delega_invisibile_28102026.pdf" download>Scarica l’abstract</a>
+      <p class="formato">PDF · 2 pagine</p></div>
+    </div>
+
+    <div class="scheda">
+      <p class="num">02</p>
+      <h3>Infografica</h3>
+      <p class="testo">I numeri principali in una sola pagina: segmenti, piattaforme di riferimento, fiducia lungo il percorso, timori e paradosso sociale.</p>
+      <div class="piede-scheda"><a class="scarica" href="INFOGRAFICA_-_La_delega_invisibile_28102026.jpg" download>Scarica l’infografica</a>
+      <p class="formato">JPG · pagina singola</p></div>
+    </div>
+
+    <div class="scheda">
+      <p class="num">03</p>
+      <h3>Slide</h3>
+      <p class="testo">La presentazione della ricerca con i dettagli non condivisi durante la serata.</p>
+      <div class="piede-scheda"><a class="scarica" href="SLIDE_-_La_delega_invisibile_28102026.pdf" download>Scarica le slide</a>
+      <p class="formato">PDF · presentazione completa</p></div>
+    </div>
+  </div>
+
+  <div class="nota-email">
+    <div class="contatto">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#D12988" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2.5 6.5 12 13l9.5-6.5"/>
+      </svg>
+      <p>Per informazioni sulla ricerca scrivi a <a href="mailto:marianna.bartiromo@focusmgmt.it?subject=La%20delega%20invisibile%20-%20materiali">marianna.bartiromo@focusmgmt.it</a></p>
+    </div>
+  </div>
 </section>
 </main>
 
@@ -120,5 +182,25 @@ footer .small{font-size:14px;opacity:.8;margin-top:10px}
     <p class="small">Un evento organizzato da Focus Management S.r.l. e Bilendi S.r.l.</p>
   </div>
 </footer>
+<script>
+/* ---------------------------------------------------------------
+   Momento di pubblicazione dei materiali.
+   Formato ISO con fuso italiano: +01:00 in ora solare, +02:00 in ora legale.
+   Nel 2026 l'ora solare parte domenica 25 ottobre, quindi il 28 ottobre vale +01:00.
+   Per cambiare l'orario basta modificare la riga qui sotto.
+--------------------------------------------------------------- */
+var PUBBLICAZIONE = new Date("2026-10-28T19:30:00+01:00");
+
+(function () {
+  var anteprima = location.search.indexOf("anteprima") !== -1;   // ?anteprima per provare prima
+  var aperto = anteprima || (new Date() >= PUBBLICAZIONE);
+  function mostra(sel, visibile) {
+    var n = document.querySelectorAll(sel);
+    for (var i = 0; i < n.length; i++) { n[i].hidden = !visibile; }
+  }
+  mostra(".prima", !aperto);
+  mostra(".dopo", aperto);
+})();
+</script>
 </body>
 </html>
